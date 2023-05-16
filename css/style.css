@@ -2164,6 +2164,9 @@ a{
     z-index: -1;
     background: #A9C2BE;
 }
+.furniture-main-block-mainimg-mobile{
+    display: none;
+}
 .designers-bg-right{
     position: absolute;
     width: 282px;
@@ -3059,5 +3062,26 @@ a{
     }
     .menu__box{
         z-index: 2;
+    }
+    .furniture-info-block{
+        width: 90%;
+    }
+    .furniture-info-block-tab-item span{
+        text-overflow: ellipsis;
+        width: 100%;
+    }
+    .furniture-main-block{
+        width: 95%;
+        flex-direction: column-reverse;
+    }
+    .furniture-main-block-mainimg{
+        display: none;
+    }
+    .furniture-main-block-mainimg-mobile{
+        width: 100%;
+        display: flex;
+    }
+    .furniture-main-block-mainimg-mobile img{
+        width: 100%;
     }
 }
