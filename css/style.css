@@ -663,6 +663,7 @@ a{
    
     height: auto;
     background: #fff;
+    width: 100%;
 }
 .question-block-form input[type="text"], .question-block-form input[type="password"]{
     border: 0;
@@ -2211,6 +2212,7 @@ a{
 }
 .design-calculation{
     height: 596px;
+    margin-bottom: 160px;
 }
 .partners-left{
     display: flex;
@@ -2575,6 +2577,23 @@ a{
     -ms-animation: rotating 2s linear infinite;
     -o-animation: rotating 2s linear infinite;
     animation: rotating 2s linear infinite;
+  }
+  
+  @keyframes up {
+    0%, 100% {
+        top: 0;
+      }
+      50% {
+        top: -120px;
+      }
+  }
+  .footer-text-logo{
+    animation: up 4s linear infinite;
+    position: absolute;
+    z-index: -1;
+  }
+  .footer{
+    position: relative;
   }
 @media only screen and (max-width: 800px) {
     .header-menu{

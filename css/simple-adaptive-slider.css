@@ -73,11 +73,13 @@
   }
   
   .itcss__btn_prev {
-    left: 0;
+    left: -40px;
+    top: 45%;
   }
   
   .itcss__btn_next {
-    right: 0;
+    right: -40px;
+    top: 45%;
   }
   
   .itcss__btn::before {
