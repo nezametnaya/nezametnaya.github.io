@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "Taiti",
         ];
     for(let i = 0; i < images.length; i++){
-        newContent += '<a class="catalog-items-data-item" href="furniture.html#tab_01"><div class="catalog-catalog-items-data-item-img"><img src="'
+        newContent += '<a class="catalog-items-data-item" href="furniture.html"><div class="catalog-catalog-items-data-item-img"><img src="'
         newContent += images[i];
         newContent += '" alt=""></div> <div class="catalog-items-data-item-text">'
         newContent += shortName[i];
@@ -90,13 +90,15 @@ document.addEventListener('DOMContentLoaded', () => {
             "Taiti",
             ];
         for(let i = 0; i < images.length; i++){
-            newContent += '<a class="catalog-items-data-item" href="furniture.html#tab_01"><div class="catalog-catalog-items-data-item-img"><img src="'
+            newContent += '<a class="catalog-items-data-item catalog-catalog-items-data-item-img-big" href="furniture.html"><div class="catalog-catalog-items-data-item-img"><img src="'
             newContent += images[i];
             newContent += '" alt=""></div> <div class="catalog-items-data-item-text">'
             newContent += shortName[i];
             newContent += '</div></a>';
         }
         div.innerHTML = newContent;
+        button4.firstElementChild.src = "img/catalog_page_sort_x8_dark.png"
+        button2.firstElementChild.src = "img/catalog_page_sort_x4_light.png"
     })
     button2.addEventListener('click', function () {
         div.innerHTML = '';
@@ -156,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Эксклюзивный матрац с ортопедическим эффектом без пружин. Самая жесткая, но при этом очень комфортная модель во всей линейке. Идеальный вариант для крупных людей.",
                 ];
         for(let i = 0; i < images.length; i++){
-            newContent += '<a class="catalog-items-data-item-big" href="furniture.html#tab_01"><div class="catalog-items-data-item-left"><div class="catalog-catalog-items-data-item-img"><img src="'
+            newContent += '<a class="catalog-items-data-item-big" href="furniture.html"><div class="catalog-items-data-item-left"><div class="catalog-catalog-items-data-item-img"><img src="'
             newContent += images[i];
             newContent += '" alt=""></div></div> <div class="catalog-items-data-item-right"><div class="catalog-items-data-item-text">'
             newContent += shortName[i];
@@ -165,5 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
             newContent += '</div></div></a>';
         }
         div.innerHTML = newContent;
+        button4.firstElementChild.src = "img/catalog_page_sort_x8_light.png"
+        button2.firstElementChild.src = "img/catalog_page_sort_x4_dark.png"
     })
 });
